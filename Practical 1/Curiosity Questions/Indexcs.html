@@ -1,0 +1,30 @@
+@model StudentResultMVC.Models.StudentResult
+
+<h2>Student Result Calculator</h2>
+
+<form method="post">
+    Subject 1:
+    <input asp-for="Subject1" /><br /><br />
+
+    Subject 2:
+    <input asp-for="Subject2" /><br /><br />
+
+    Subject 3:
+    <input asp-for="Subject3" /><br /><br />
+
+    Subject 4:
+    <input asp-for="Subject4" /><br /><br />
+
+    Subject 5:
+    <input asp-for="Subject5" /><br /><br />
+
+    <input type="submit" value="Calculate" />
+</form>
+
+@if (Model != null && Model.Total > 0)
+{
+    <hr />
+    <h3>Total: @Model.Total</h3>
+    <h3>Percentage: @Model.Percentage%</h3>
+    <h3>Grade: @Model.Grade</h3>
+}
