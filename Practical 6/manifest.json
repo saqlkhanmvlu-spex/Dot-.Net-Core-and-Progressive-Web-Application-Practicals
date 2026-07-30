@@ -1,0 +1,20 @@
+{
+  "name": "HTML TO PWA",
+  "short_name": "HTP",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icons/icon1.png",
+      "sizes": "128/128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon2.png",
+      "sizes": "512/512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
