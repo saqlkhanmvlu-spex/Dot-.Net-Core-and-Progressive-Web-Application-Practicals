@@ -1,0 +1,6 @@
+{
+  "name": "Student PWA (T013)",
+  "short_name": "Student",
+  "start_url": "/",
+  "display": "standalone"
+}
