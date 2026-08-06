@@ -1,0 +1,14 @@
+<h2>Student Record</h2>
+<button onclick="loadStudent()">Load Student</button>
+<p id="data"></p>
+<script>
+	function loadStudent(){
+	fetch("/api/student")
+	.then(response => response.json())
+	.then(student=>{
+	document.getElementById("data").innerHTML=
+	"Roll No : "+student.rollNo+
+	"<br>Name : "+student.name;
+	});
+	}
+</script>
